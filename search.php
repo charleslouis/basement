@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_template_part('templates/header'); ?>
 
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" id="content" role="main">
@@ -9,11 +9,11 @@
 	
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', get_post_format() ); ?>
+			<?php get_template_part( 'templates/content', get_post_format() ); ?>
 		<?php endwhile; ?>
 		
 		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
+			<?php get_template_part( 'templates/content', 'none' ); ?>
 		
 	<?php endif; // end have_posts() check ?>
 	
@@ -28,4 +28,4 @@
 	</div>
 	<?php get_sidebar(); ?>
 		
-<?php get_footer(); ?>
+<?php get_template_part('templates/footer'); ?>

@@ -40,6 +40,8 @@
 		return;
 	}
 ?>
+
+
 <?php // You can start editing here. Customize the respond form below ?>
 <?php if ( have_comments() ) : ?>
 	<section id="comments">

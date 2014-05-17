@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_template_part('templates/header'); ?>
 
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" id="content" role="main">
@@ -23,4 +23,4 @@
 	</div>
 	<?php get_sidebar(); ?>
 		
-<?php get_footer(); ?>
+<?php get_template_part('templates/footer'); ?>

@@ -1,39 +1,4 @@
 <?php
-/*********************
-Start all the functions
-at once for Basement.
-*********************/
-
-// start all the functions
-add_action('after_setup_theme','basement_startup');
-
-if( ! function_exists( 'basement_startup ' ) ) {
-	function basement_startup() {
-
-	    // launching operation cleanup
-	    add_action('init', 'basement_head_cleanup');
-	    // remove WP version from RSS
-	    add_filter('the_generator', 'basement_rss_version');
-	    // remove pesky injected css for recent comments widget
-	    add_filter( 'wp_head', 'basement_remove_wp_widget_recent_comments_style', 1 );
-	    // clean up comment styles in the head
-	    add_action('wp_head', 'basement_remove_recent_comments_style', 1);
-	    // clean up gallery output in wp
-	    add_filter('gallery_style', 'basement_gallery_style');
-
-	    // ie conditional wrapper
-	    add_filter( 'style_loader_tag', 'basement_ie_conditional', 10, 2 );
-	    
-	    // additional post related cleaning
-	    add_filter( 'img_caption_shortcode', 'basement_cleaner_caption', 10, 3 );
-	    add_filter('get_image_tag_class', 'basement_image_tag_class', 0, 4);
-	    add_filter('get_image_tag', 'basement_image_editor', 0, 4);
-	    add_filter( 'the_content', 'basement_img_unautop', 30 );
-
-	} /* end basement_startup */
-}
-
-
 /**********************
 WP_HEAD GOODNESS
 The default WordPress head is
@@ -121,6 +86,18 @@ if( ! function_exists( 'basement_ie_conditional ' ) ) {
 		return $tag;
 	}
 }
+
+
+/**
+ * Tell WordPress to use searchform.php from the templates/ directory
+ */
+function roots_get_search_form($form) {
+  $form = '';
+  locate_template('/templates/searchform.php', true, false);
+  return $form;
+}
+add_filter('get_search_form', 'roots_get_search_form');
+
 
 /*********************
 Post related cleaning

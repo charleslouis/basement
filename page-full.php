@@ -21,10 +21,10 @@ get_header(); ?>
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'basement'), 'after' => '</p></nav>' )); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
-			<?php comments_template(); ?>
+			<?php comments_template('/templates/comments.php'); ?>
 		</article>
 	<?php endwhile; // End the loop ?>
 
 	</div>
 		
-<?php get_footer(); ?>
+<?php get_template_part('templates/footer'); ?>
