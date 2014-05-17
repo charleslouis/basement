@@ -6,14 +6,14 @@ if you use Sass.
 if( ! function_exists( 'basement_enqueue_style' ) ) {
 	function basement_enqueue_style()
 	{
-		// foundation stylesheet
-		// wp_register_style( 'basement-foundation-stylesheet', get_stylesheet_directory_uri() . '/assets/css/app.css', array(), '' );
-
-		// Register the main style
+		// Register the main stylesheet
 		wp_register_style( 'basement-stylesheet', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
 		
-		// wp_enqueue_style( 'basement-foundation-stylesheet' );
+		// Register fonts stylesheet
+		wp_register_style( 'fonts', 'http://fast.fonts.net/cssapi/1769b8a5-1097-4dd8-93dc-391a479703e1.css', array(), '', 'all' );
+		
 		wp_enqueue_style( 'basement-stylesheet' );
+		wp_enqueue_style( 'fonts' );		
 		
 	}
 }
