@@ -2,10 +2,11 @@
 /**
  * Enable theme features
  */
-add_theme_support('reverie-relative-urls');    // Enable relative URLs
+add_theme_support('reverie-relative-urls'); // Enable relative URLs
 add_theme_support('rewrites');              // Enable URL rewrites
 add_theme_support('nice-search');           // Enable /?s= to /search/ redirect
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
+add_theme_support('post-thumbnails');       // Add post thumbnail supports. http://codex.wordpress.org/Post_Thumbnails
 
 /**
  * Configuration values
