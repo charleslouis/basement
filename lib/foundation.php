@@ -1,7 +1,7 @@
 <?php
 // Pagination
-if( ! function_exists( 'reverie_pagination' ) ) {
-	function reverie_pagination() {
+if( ! function_exists( 'basement_pagination' ) ) {
+	function basement_pagination() {
 		global $wp_query;
 	 
 		$big = 999999999; // This needs to be an unlikely integer
@@ -32,15 +32,15 @@ if( ! function_exists( 'reverie_pagination' ) ) {
  * A fallback when no navigation is selected by default, otherwise it throws some nasty errors in your face.
  * From required+ Foundation http://themes.required.ch
  */
-if( ! function_exists( 'reverie_menu_fallback' ) ) {
-	function reverie_menu_fallback() {
+if( ! function_exists( 'basement_menu_fallback' ) ) {
+	function basement_menu_fallback() {
 		echo '<div class="alert-box secondary">';
 		// Translators 1: Link to Menus, 2: Link to Customize
-	  	printf( __( 'Please assign a menu to the primary menu location under %1$s or %2$s the design.', 'reverie' ),
-	  		sprintf(  __( '<a href="%s">Menus</a>', 'reverie' ),
+	  	printf( __( 'Please assign a menu to the primary menu location under %1$s or %2$s the design.', 'basement' ),
+	  		sprintf(  __( '<a href="%s">Menus</a>', 'basement' ),
 	  			get_admin_url( get_current_blog_id(), 'nav-menus.php' )
 	  		),
-	  		sprintf(  __( '<a href="%s">Customize</a>', 'reverie' ),
+	  		sprintf(  __( '<a href="%s">Customize</a>', 'basement' ),
 	  			get_admin_url( get_current_blog_id(), 'customize.php' )
 	  		)
 	  	);
@@ -49,22 +49,22 @@ if( ! function_exists( 'reverie_menu_fallback' ) ) {
 }
 
 // Add Foundation 'active' class for the current menu item
-if( ! function_exists( 'reverie_active_nav_class' ) ) {
-	function reverie_active_nav_class( $classes, $item ) {
+if( ! function_exists( 'basement_active_nav_class' ) ) {
+	function basement_active_nav_class( $classes, $item ) {
 	    if ( $item->current == 1 || $item->current_item_ancestor == true ) {
 	        $classes[] = 'active';
 	    }
 	    return $classes;
 	}
 }
-add_filter( 'nav_menu_css_class', 'reverie_active_nav_class', 10, 2 );
+add_filter( 'nav_menu_css_class', 'basement_active_nav_class', 10, 2 );
 
 /**
  * Use the active class of ZURB Foundation on wp_list_pages output.
  * From required+ Foundation http://themes.required.ch
  */
-if( ! function_exists( 'reverie_active_list_pages_class' ) ) {
-	function reverie_active_list_pages_class( $input ) {
+if( ! function_exists( 'basement_active_list_pages_class' ) ) {
+	function basement_active_list_pages_class( $input ) {
 
 		$pattern = '/current_page_item/';
 	    $replace = 'current_page_item active';
@@ -74,6 +74,6 @@ if( ! function_exists( 'reverie_active_list_pages_class' ) ) {
 	    return $output;
 	}
 }
-add_filter( 'wp_list_pages', 'reverie_active_list_pages_class', 10, 2 );
+add_filter( 'wp_list_pages', 'basement_active_list_pages_class', 10, 2 );
 
 ?>

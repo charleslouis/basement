@@ -13,9 +13,9 @@
 			<?php wp_nav_menu(array('theme_location' => 'utility', 'container' => false, 'menu_class' => 'inline-list')); ?>
 		</div>
 	</div>
-	<div class="row love-reverie">
+	<div class="row love-basement">
 		<div class="large-12 columns">
-			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('Made with Love in','reverie'); ?> <a href="http://themefortress.com/reverie/" rel="nofollow" title="Reverie Framework">Reverie</a>.</p>
+			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('Made with Love in','basement'); ?> <a href="http://themefortress.com/basement/" rel="nofollow" title="Basement Framework">Basement</a>.</p>
 		</div>
 	</div>
 </footer>

@@ -1,7 +1,7 @@
-/* Welcome and glad you are using Reverie.
+/* Welcome and glad you are using Basement.
  * This is the main stylesheet loaded by default.
  * Edit the file and have fun.
- * http://themefortress.com/reverie */
+ * http://themefortress.com/basement */
 
 // import normalize, stay at top
 // @import "normalize";
@@ -17,7 +17,7 @@
 // Load some Bourbon magic
 @import "bourbon";
 
-/* Start to customize Reverie */
+/* Start to customize Basement */
 
 // add transition effect
 a, a:visited, a:hover, a:visited:hover {
@@ -308,7 +308,7 @@ footer.full-width {
 			color: $body-font-color;
 		}
 	}
-	.love-reverie {
+	.love-basement {
 		border-top: 1px solid #ccc;
 		padding-top: rem-calc(24);
 	}

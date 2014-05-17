@@ -1,4 +1,4 @@
-Basement is a responsive WordPress starting theme based on ZURB's Foundation created by Charles-Louis Allizard from a fork of Reverie and suing some nice stuffs found in Roots as well.
+Basement is a responsive WordPress starting theme based on ZURB's Foundation created by Charles-Louis Allizard from a fork of Basement and suing some nice stuffs found in Roots as well.
 
 If you have any questions or suggestions, please let us know : https://github.com/kartonnade/basement/issues
 

@@ -3,7 +3,7 @@
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" id="content" role="main">
 	
-		<h2><?php _e('Search Results for', 'reverie'); ?> "<?php echo get_search_query(); ?>"</h2>
+		<h2><?php _e('Search Results for', 'basement'); ?> "<?php echo get_search_query(); ?>"</h2>
 	
 	<?php if ( have_posts() ) : ?>
 	
@@ -18,10 +18,10 @@
 	<?php endif; // end have_posts() check ?>
 	
 	<?php /* Display navigation to next/previous pages when applicable */ ?>
-	<?php if ( function_exists('reverie_pagination') ) { reverie_pagination(); } else if ( is_paged() ) { ?>
+	<?php if ( function_exists('basement_pagination') ) { basement_pagination(); } else if ( is_paged() ) { ?>
 		<nav id="post-nav">
-			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'reverie' ) ); ?></div>
-			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'reverie' ) ); ?></div>
+			<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'basement' ) ); ?></div>
+			<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'basement' ) ); ?></div>
 		</nav>
 	<?php } ?>
 

@@ -17,12 +17,12 @@
  *   <li id="menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8"><a href="/">Home</a></li>
  *   <li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="/sample-page/">Sample Page</a></l
  *
- * reverie_walker as above example output:
+ * basement_walker as above example output:
  *   <li id="menu-item-home" class="menu-item menu-item-main-menu menu-item-home"><a href="/">Home</a></li>
  *   <li id="menu-item-sample-page" class="menu-item menu-item-main-menu menu-item-sample-page"><a href="/sample-page/">Sample Page</a></li>
  *
  */
-class reverie_walker extends Walker_Nav_Menu {
+class basement_walker extends Walker_Nav_Menu {
 
 	/**
 	 * Specify the item type to allow different walkers

@@ -1,11 +1,11 @@
-/* Reverie is a versatile HTML5 responsive WordPress framework based on ZURB's Foundation. */
+/* Basement is a versatile HTML5 responsive WordPress framework based on ZURB's Foundation. */
 
 /* TEAM */
 
 Zhen Huang
 http://themefortress.com
 Twitter: @themefortress
-Reverie Framework: http://themefortress.com/reverie/
+Basement Framework: http://themefortress.com/basement/
 
 /* THANKS */							
 

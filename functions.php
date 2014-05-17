@@ -17,7 +17,7 @@ require_once('lib/clean.php'); // do all the cleaning and enqueue here
 
 /*
 2. lib/enqueue-style.php
-    - enqueue Foundation and Reverie CSS
+    - enqueue Foundation and Basement CSS
 */
 require_once('lib/enqueue-style.php');
 
@@ -33,17 +33,17 @@ require_once('lib/foundation.php'); // load Foundation specific functions like t
 require_once('lib/nav.php'); // filter default wordpress menu classes and clean wp_nav_menu markup
 /*
 5. lib/presstrends.php
-    - add PressTrends, tracks how many people are using Reverie
+    - add PressTrends, tracks how many people are using Basement
 */
-require_once('lib/presstrends.php'); // load PressTrends to track the usage of Reverie across the web, comment this line if you don't want to be tracked
+require_once('lib/presstrends.php'); // load PressTrends to track the usage of Basement across the web, comment this line if you don't want to be tracked
 
 /**********************
 Add theme supports
  **********************/
-if( ! function_exists( 'reverie_theme_support' ) ) {
-    function reverie_theme_support() {
+if( ! function_exists( 'basement_theme_support' ) ) {
+    function basement_theme_support() {
         // Add language supports.
-        load_theme_textdomain('reverie', get_template_directory() . '/lang');
+        load_theme_textdomain('basement', get_template_directory() . '/lang');
 
         // Add post thumbnail supports. http://codex.wordpress.org/Post_Thumbnails
         add_theme_support('post-thumbnails');
@@ -61,9 +61,9 @@ if( ! function_exists( 'reverie_theme_support' ) ) {
         // Add menu support. http://codex.wordpress.org/Function_Reference/register_nav_menus
         add_theme_support('menus');
         register_nav_menus(array(
-            'primary' => __('Primary Navigation', 'reverie'),
-            'additional' => __('Additional Navigation', 'reverie'),
-            'utility' => __('Utility Navigation', 'reverie')
+            'primary' => __('Primary Navigation', 'basement'),
+            'additional' => __('Additional Navigation', 'basement'),
+            'utility' => __('Utility Navigation', 'basement')
         ));
 
         // Add custom background support
@@ -78,7 +78,7 @@ if( ! function_exists( 'reverie_theme_support' ) ) {
         );
     }
 }
-add_action('after_setup_theme', 'reverie_theme_support'); /* end Reverie theme support */
+add_action('after_setup_theme', 'basement_theme_support'); /* end Basement theme support */
 
 // create widget areas: sidebar, footer
 $sidebars = array('Sidebar');
@@ -103,9 +103,9 @@ foreach ($sidebars as $sidebar) {
 }
 
 // return entry meta information for posts, used by multiple loops, you can override this function by defining them first in your child theme's functions.php file
-if ( ! function_exists( 'reverie_entry_meta' ) ) {
-    function reverie_entry_meta() {
-        echo '<span class="byline author">'. __('Written by', 'reverie') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .', </a></span>';
+if ( ! function_exists( 'basement_entry_meta' ) ) {
+    function basement_entry_meta() {
+        echo '<span class="byline author">'. __('Written by', 'basement') .' <a href="'. get_author_posts_url(get_the_author_meta('ID')) .'" rel="author" class="fn">'. get_the_author() .', </a></span>';
         echo '<time class="updated" datetime="'. get_the_time('c') .'" pubdate>'. get_the_time('F jS, Y') .'</time>';
     }
 };
