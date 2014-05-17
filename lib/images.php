@@ -17,13 +17,13 @@ if ( function_exists( 'add_image_size' ) ) {
 add_filter('image_size_names_choose', 'basement_image_sizes');
 function basement_image_sizes($sizes) {
   $addsizes = array(
-          "small" => __( "Picture Small"),
-          "small-retina" => __( "Picture Small Retina"),
-          "medium" => __( "Picture Medium"),
-          "medium-retina" => __( "Picture Medium Retina"),
-          "large" => __( "Picture Large"),
-          "large-retina" => __( "Picture Large Retina"),
-          );
+    "small" => __( "Picture Small"),
+    "small-retina" => __( "Picture Small Retina"),
+    "medium" => __( "Picture Medium"),
+    "medium-retina" => __( "Picture Medium Retina"),
+    "large" => __( "Picture Large"),
+    "large-retina" => __( "Picture Large Retina"),
+    );
   $newsizes = array_merge($sizes, $addsizes);
   return $newsizes;
 }

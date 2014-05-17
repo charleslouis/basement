@@ -7,6 +7,13 @@ add_theme_support('rewrites');              // Enable URL rewrites
 add_theme_support('nice-search');           // Enable /?s= to /search/ redirect
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
 add_theme_support('post-thumbnails');       // Add post thumbnail supports. http://codex.wordpress.org/Post_Thumbnails
+add_theme_support('automatic-feed-links');  // rss thingy
+
+// Add post formats support. http://codex.wordpress.org/Post_Formats
+add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+
+add_theme_support('menus'); // Add menu support. http://codex.wordpress.org/Function_Reference/register_nav_menus
+
 
 /**
  * Configuration values
