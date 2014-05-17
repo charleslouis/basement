@@ -1,7 +1,7 @@
 basement
 ========
 
-# Présentation
+# Presentation
 Basement is a starting Wordpress theme based on [Foundation](http://foundation.zurb.com/) + a bit of [Bourbon](http://bourbon.io/) magic] and [Html5 Bolierplate](http://html5boilerplate.com/).
 It derives from [Roots](http://roots.io/) and [Reverie](http://themefortress.com/reverie/).
 It uses Foundation, Bower, Sass, Libsass and Grunt.
