@@ -13,6 +13,7 @@ add_theme_support('jquery-cdn');            // Enable to load jQuery from the Go
 define('GOOGLE_ANALYTICS_ID', 'UA-44566355-1'); // UA-XXXXX-Y
 define('POST_EXCERPT_LENGTH', 40);
 define('IMAGES', get_template_directory_uri() . '/assets/img');
+define('IMAGES_BRANDING', get_template_directory_uri() . '/assets/img/branding');
 define('USE_IE_ONLY_STYLE_SHEET', true);
 
 
