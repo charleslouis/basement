@@ -21,8 +21,6 @@ if( ! function_exists( 'basement_startup ' ) ) {
 	    // clean up gallery output in wp
 	    add_filter('gallery_style', 'basement_gallery_style');
 
-	    // enqueue base scripts and styles
-	    add_action('wp_enqueue_scripts', 'basement_scripts_and_styles', 999);
 	    // ie conditional wrapper
 	    add_filter( 'style_loader_tag', 'basement_ie_conditional', 10, 2 );
 	    

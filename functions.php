@@ -8,6 +8,9 @@ anything else you may want to use plugins to keep things tidy.
 
 */
 
+require_once locate_template('lib/hooks.php');          // Custom functions
+require_once locate_template('lib/config.php');         // Configuration
+
 /*
 1. lib/clean.php
   - head cleanup
@@ -22,17 +25,25 @@ require_once('lib/clean.php'); // do all the cleaning and enqueue here
 require_once('lib/enqueue-style.php');
 
 /*
-3. lib/foundation.php
+3. lib/enqueue-scripts.php
+    - enqueue Jquery from google CDN with local fallbakc
+    - enqueue modernizr
+    - enqueue Foundation and Basement uglified JS
+*/
+require_once('lib/enqueue-scripts.php');
+
+/*
+4. lib/foundation.php
 	- add pagination
 */
 require_once('lib/foundation.php'); // load Foundation specific functions like top-bar
 /*
-4. lib/nav.php
+5. lib/nav.php
 	- custom walker for top-bar and related
 */
 require_once('lib/nav.php'); // filter default wordpress menu classes and clean wp_nav_menu markup
 /*
-5. lib/presstrends.php
+6. lib/presstrends.php
     - add PressTrends, tracks how many people are using Basement
 */
 require_once('lib/presstrends.php'); // load PressTrends to track the usage of Basement across the web, comment this line if you don't want to be tracked

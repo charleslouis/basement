@@ -61,7 +61,6 @@ module.exports = function(grunt) {
         preserveComments: 'all',
         files: {
           'assets/js/script.js' : [
-          'bower_components/jquery/dist/jquery.js',
           'bower_components/fastclick/lib/fastclick.js',
           'bower_components/foundation/js/foundation/foundation.js',
           // 'bower_components/foundation/js/foundation/foundation.abide.js',
@@ -82,7 +81,8 @@ module.exports = function(grunt) {
           // 'bower_components/foundation/js/foundation/foundation.topbar.js',
           'assets/js/src/custom/*.js',
           ],
-          'assets/js/modernizr.js' : 'assets/src/js/vendor/modernizr.js'
+          'assets/js/vendor/modernizr.js' : 'assets/js/src/vendor/modernizr.js',
+          'assets/js/vendor/jquery.js' : 'assets/js/src/vendor/jquery.js',
         }
       },
       dist: {
