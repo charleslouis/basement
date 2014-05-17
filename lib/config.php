@@ -18,6 +18,7 @@ add_theme_support('menus'); // Add menu support. http://codex.wordpress.org/Func
 /**
  * Configuration values
  */
+define('LOAD_FOUNDATION_JS ', true);
 define('GOOGLE_ANALYTICS_ID', ''); // UA-XXXXX-Y
 define('POST_EXCERPT_LENGTH', 40);
 define('USE_IE_ONLY_STYLE_SHEET', true);

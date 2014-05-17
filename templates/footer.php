@@ -21,12 +21,7 @@
 </footer>
 
 <?php wp_footer(); ?>
-
-<script>
-	(function($) {
-		$(document).foundation();
-	})(jQuery);
-</script>
-	
+<?php basement_footer(); ?>
+ 
 </body>
 </html>

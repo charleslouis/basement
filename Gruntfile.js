@@ -61,7 +61,7 @@ module.exports = function(grunt) {
         preserveComments: 'all',
         files: {
           'assets/js/script.js' : [
-          'bower_components/fastclick/lib/fastclick.js',
+          // 'bower_components/fastclick/lib/fastclick.js',
           'bower_components/foundation/js/foundation/foundation.js',
           // 'bower_components/foundation/js/foundation/foundation.abide.js',
           // 'bower_components/foundation/js/foundation/foundation.accordion.js',
@@ -183,7 +183,8 @@ module.exports = function(grunt) {
       },
       js: {
         files: [
-          'assets/js/src/custom/*.js',
+          'assets/js/src/**/*.js',
+          'assets/js/src/*.js',
         ],
         tasks: ['jshint', 'uglify:dev'],
         options: {

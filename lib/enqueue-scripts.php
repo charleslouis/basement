@@ -15,13 +15,16 @@ if( ! function_exists( 'basement_scripts ' ) ) {
       add_filter('script_loader_src', 'basement_jquery_local_fallback', 10, 2);
     }
 
-    // modernizr
+/*==========  Modernizr  ==========*/    
     wp_register_script( 'basement-modernizr', get_template_directory_uri() . '/assets/js/modernizr.js', array(), '2.6.2', false );
 
 
+/*==========  Comment  ==========*/    
     // comment reply script for threaded comments
     if( get_option( 'thread_comments' ) )  { wp_enqueue_script( 'comment-reply' ); }
     
+    
+/*==========  BAsement scripts  ==========*/    
     // adding uglified Foundation + Basement (your) script file in the footer
     wp_register_script( 'basement-js', get_template_directory_uri() . '/assets/js/script.js', array( 'jquery' ), '', true );
     
@@ -32,9 +35,9 @@ if( ! function_exists( 'basement_scripts ' ) ) {
 
     // enqueue scripts
     wp_enqueue_script( 'basement-modernizr' );
+    wp_enqueue_script( 'html5shiv' );
     wp_enqueue_script( 'jquery' );  
     wp_enqueue_script( 'basement-js' );
-    wp_enqueue_script( 'html5shiv' );
 
   }
 }
@@ -62,21 +65,37 @@ function basement_jquery_local_fallback($src, $handle) {
 // Load Google Analytics using config file
 function basement_google_analytics() { ?>
 
-	<script>
-	  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-	  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-	  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-	  e.src='//www.google-analytics.com/analytics.js';
-	  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-	  ga('create','<?php echo GOOGLE_ANALYTICS_ID; ?>');ga('send','pageview');
-	</script>
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','<?php echo GOOGLE_ANALYTICS_ID; ?>');ga('send','pageview');
+  </script>
 
 <?php }
 
 if (GOOGLE_ANALYTICS_ID && !is_admin()) {
   add_action('wp_footer', 'basement_google_analytics', 20);
 }
-// basement_google_analytics
+
+
+// Load Foundation using config file
+function basement_foundation() { ?>
+
+  <script>
+    (function($) {
+      $(document).foundation();
+    })(jQuery);
+  </script>
+
+<?php }
+
+if ( LOAD_FOUNDATION_JS ) {
+  add_action('basement_footer', 'basement_foundation', 20);
+}
+// basement_foundation
 
 
 function embed_gmap() {
