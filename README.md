@@ -57,6 +57,7 @@ When you feel ready to go on production, run `grunt dist`. This will automatical
 ## Configuration
 Edit **lib/config.php** to enable or disable support for various theme functions and to define constants that are used throughout the theme such as :
 - GOOGLE_ANALYTICS_ID
+- DATE_FORMAT (default is dd/mm/yyyy but you can switch to mm/dd/yyyy)
 - POST_EXCERPT_LENGTH
 - IMAGES (folder)
 

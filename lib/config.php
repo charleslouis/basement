@@ -26,6 +26,9 @@ define('USE_IE_ONLY_STYLE_SHEET', true);
 define('IMAGES', get_template_directory_uri() . '/assets/img');
 define('IMAGES_BRANDING', IMAGES . '/assets/img/branding');
 
+define('DATE_FORMAT', 'j F Y'); 
+// English 'F jS, Y'
+// French 'j F Y'
 
 /**
  * $content_width is a global variable used by WordPress for max image upload sizes
