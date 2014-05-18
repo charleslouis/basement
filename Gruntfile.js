@@ -35,8 +35,9 @@ module.exports = function(grunt) {
           banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
             '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
             '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-            '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-            ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+            '<%= pkg.description ? "* " + pkg.description + "\\n" : "" %>' +
+            'Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name + "\\n" %>' +
+            'Licenced: <%= pkg.licence ? "" + pkg.licence + "\\n" : "" %> */\n',
           style: 'compressed',
           debugInfo: false,
           trace: false
@@ -48,11 +49,14 @@ module.exports = function(grunt) {
     },
     uglify: {
       options: {
-        banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
+        banner: '/*!==============================================================================\n' + 
+          '<%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
           '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-          '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-          '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-          ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+          '<%= pkg.homepage ? " " + pkg.homepage + "\\n" : "" %>' +
+          '<%= pkg.description ? " " + pkg.description + "\\n" : "" %>' +
+          'Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name + "\\n" %>' +
+          'Licenced: <%= pkg.licence ? "" + pkg.licence + "\\n" : "" %>' +
+          '============================================================================== */\n',
       },
       dev: {
         options: {

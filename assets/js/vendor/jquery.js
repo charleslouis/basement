@@ -1,4 +1,5 @@
 /*! Basement - v1.0.0 - 2014-05-18
+* [object Object]
 * Copyright (c) 2014 ; Licensed  */
 /*!
  * jQuery JavaScript Library v2.0.3
