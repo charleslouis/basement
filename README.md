@@ -21,6 +21,8 @@ Then run :
 npm install
 bower install
 ````
+Note for cygwin user : as you might know, [you can't](https://www.npmjs.org/doc/README.html) run `npm install` in cygwin. Use another bash to run it.
+Once installed, you can, however, run `grunt dev` from cygwin.
 
 All in the console you can go like 
 ````
