@@ -68,6 +68,10 @@ Use **lib/custom.php** to store your own functions or, alternatively, use **func
 
 ## Features
 
+#### Menu
+* cleaner menu output using basement_walker (derives from root/reverie nav_walker)
+* adds not-click class for dropdown items that have '#' as a url
+
 ## Licence
 Basement is released under the MIT License (MIT), the same as Foundation, Roots and Reverie.
 
