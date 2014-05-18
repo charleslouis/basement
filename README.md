@@ -3,7 +3,7 @@ Basement
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-Basement is a starting Wordpress theme based on [Foundation 5](http://foundation.zurb.com/) whith a bit of [Bourbon](http://bourbon.io/) magic and [Html5 Bolierplate](http://html5boilerplate.com/).
+Basement is a starting Wordpress theme based on [Foundation 5](http://foundation.zurb.com/) whith a bit of [Bourbon](http://bourbon.io/) magic and [Html5 Boilerplate](http://html5boilerplate.com/).
 It derives from [Roots](http://roots.io/) and [Reverie](http://themefortress.com/reverie/).
 It uses Foundation, Bower, Sass, Libsass and Grunt.
 
