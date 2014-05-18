@@ -1,5 +1,8 @@
-/*! Basement - v1.0.0 - 2014-05-17
+/*! Basement - v1.0.0 - 2014-05-18
 * Copyright (c) 2014 ; Licensed  */
+/* Modernizr 2.6.2 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-inlinesvg-svg-svgclippaths-touch-shiv-mq-cssclasses-teststyles-prefixes-ie8compat-load
+ */
 window.Modernizr = function(a, b, c) {
     function d(a) {
         o.cssText = a;
