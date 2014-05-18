@@ -27,8 +27,25 @@ npm install
 bower install
 ````
 
-Then you can simply use
-`grunt dev` during development and `grunt dist` when you feel ready
+## Theme development
+Once installed you can simply use : `grunt dev` during theme development.
+This will watch your repo for updates to your SCSS, JS and PHP files and Grunt will automatically :
+- compile your SCSS to CSS in a single file in an **expanded style** with **sourcemap** and **debugInfo**
+- check your JS using [jshint](http://www.jshint.com/). This can be configured in the .jshint file
+- ~~uglify~~ beautify your JS in a single file with `console.log()` and comments preserved so that debug is easier
+- reload your web page using [livereload](http://livereload.com/) browser extension
+
+When you feel ready to go on production, run `grunt dist`. This will automatically :
+- compile your SCSS to CSS in a single file in an **compressed style** with no **debugInfo**
+- check your JS using [jshint](http://www.jshint.com/). This can be configured in the .jshint file
+- **uglify** your JS in a single file **without** `console.log()` and only some comments preserved
+- optimize your images :
+-- SVG using [grunt svgmin](https://github.com/sindresorhus/grunt-svgmin)
+-- PNGs using [grunt smushit](https://github.com/heldr/grunt-smushit)
+
+
+You might also need to run `grunt img` when you add images (svg/png) to optimize them before storing them in the proper folder.
+
 
 ## Licence
 Basement is released under the MIT License (MIT), the same as Foundation, Roots and Reverie.
