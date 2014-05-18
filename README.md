@@ -27,6 +27,9 @@ npm install
 bower install
 ````
 
-
 Then you can simply use
 `grunt dev` during development and `grunt dist` when you feel ready
+
+## Licence
+Basement is released under the MIT License (MIT), the same as Foundation, Roots and Reverie.
+
