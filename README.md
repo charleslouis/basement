@@ -24,6 +24,7 @@ All in the console you can go like
 ````
 cd yoursite/wp-content/themes
 git clone git@github.com:kartonnade/basement.git
+cd basement
 npm install
 bower install
 ````
@@ -44,10 +45,8 @@ You might also need to run `grunt img` when you add images (svg/png) to optimize
 When you feel ready to go on production, run `grunt dist`. This will automatically :
 - compile your SCSS to CSS in a single file in an **compressed style** with no **debugInfo**
 - check your JS using [jshint](http://www.jshint.com/). This can be configured in the .jshint file
-- **uglify** your JS in a single file **without** `console.log()` and only some comments preserved
-- optimize your images :
--- SVG using [grunt svgmin](https://github.com/sindresorhus/grunt-svgmin)
--- PNGs using [grunt smushit](https://github.com/heldr/grunt-smushit)
+- uglify your JS in a single file **without** `console.log()` and only some comments preserved
+- optimize your images : SVG using [svgmin](https://github.com/sindresorhus/grunt-svgmin) and PNGs using [smushit](https://github.com/heldr/grunt-smushit)
 
 
 
