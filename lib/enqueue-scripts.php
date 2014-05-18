@@ -16,7 +16,7 @@ if( ! function_exists( 'basement_scripts ' ) ) {
     }
 
 /*==========  Modernizr  ==========*/    
-    wp_register_script( 'basement-modernizr', get_template_directory_uri() . '/assets/js/modernizr.js', array(), '2.6.2', false );
+    wp_register_script( 'basement-modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr.js', array(), '2.6.2', false );
 
 
 /*==========  Comment  ==========*/    
