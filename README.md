@@ -1,6 +1,8 @@
 Basement
 ========
 
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
 Basement is a starting Wordpress theme based on [Foundation 5](http://foundation.zurb.com/) whith a bit of [Bourbon](http://bourbon.io/) magic and [Html5 Bolierplate](http://html5boilerplate.com/).
 It derives from [Roots](http://roots.io/) and [Reverie](http://themefortress.com/reverie/).
 It uses Foundation, Bower, Sass, Libsass and Grunt.
@@ -29,12 +31,12 @@ npm install
 bower install
 ````
 
-## Theme development
+## Theme development and usage
 #### Compile and reload
 Once installed you can simply use : `grunt dev` during theme development.
 This will watch your repo for updates to your SCSS, JS and PHP files and Grunt will automatically :
 - compile your SCSS to CSS in a single file in an **expanded style** with **sourcemap** and **debugInfo**
-- check your JS using [jshint](http://www.jshint.com/). This can be configured in the .jshint file
+- check your JS using [jshint](http://www.jshint.com/). This can be configured in the .jshintrc file
 - ~~uglify~~ beautify your JS in a single file with `console.log()` and comments preserved so that debug is easier
 - reload your web page using [livereload](http://livereload.com/) browser extension
 
@@ -48,8 +50,19 @@ When you feel ready to go on production, run `grunt dist`. This will automatical
 - uglify your JS in a single file **without** `console.log()` and only some comments preserved
 - optimize your images : SVG using [svgmin](https://github.com/sindresorhus/grunt-svgmin) and PNGs using [smushit](https://github.com/heldr/grunt-smushit)
 
+## Configuration
+Edit **lib/config.php** to enable or disable support for various theme functions and to define constants that are used throughout the theme such as :
+- GOOGLE_ANALYTICS_ID
+- POST_EXCERPT_LENGTH
+- IMAGES (folder)
 
+Edit **lib/init.php** to setup custom navigation menus 
 
+Edit **lib/imgages.php** to setup post thumbnail and custom image size. This is supposed to make things easier for you to implement [interchange.js](http://foundation.zurb.com/docs/components/interchange.html)
+
+Use **lib/custom.php** to store your own functions or, alternatively, use **functions.php**
+
+## Features
 
 ## Licence
 Basement is released under the MIT License (MIT), the same as Foundation, Roots and Reverie.
