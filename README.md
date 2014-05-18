@@ -12,9 +12,9 @@ It uses Foundation, Bower, Sass, Libsass and Grunt.
 ## Prerequisites and dependancies
 All the dependencies for Basement are contained contained in package.json (npm) and bower.json (bower).
 Before installation, you need to have the following installed:
-- [nodejs](http://nodejs.org/)
-- [Grunt](http://gruntjs.com/)
-- [bower](http://bower.io/) 
+- [nodejs](http://nodejs.org/). See installation provided on their web site
+- [Grunt](http://gruntjs.com/). Read the doc or run `[sudo] npm install -g grunt-cli`
+- [bower](http://bower.io/). Read the doc or run `[sudo] npm install -g bower`
 
 ## Installation
 Clone the git repo `git clone git@github.com:kartonnade/basement.git` or [download it a zip file](https://github.com/kartonnade/basement/archive/master.zip).
