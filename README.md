@@ -11,7 +11,7 @@ It uses Foundation, Bower, Sass, Libsass and Grunt.
 
 ## Prerequisites and dependancies
 All the dependencies for Basement are contained contained in package.json (npm) and bower.json (bower).
-Before installation, you need to have the following :
+Before installation, you need to have the following installed:
 - [nodejs](http://nodejs.org/)
 - [Grunt](http://gruntjs.com/)
 - [bower](http://bower.io/) 
