@@ -2,7 +2,7 @@
 /**
  * Enable theme features
  */
-add_theme_support('reverie-relative-urls'); // Enable relative URLs
+add_theme_support('basement-relative-urls'); // Enable relative URLs
 add_theme_support('rewrites');              // Enable URL rewrites
 add_theme_support('nice-search');           // Enable /?s= to /search/ redirect
 add_theme_support('jquery-cdn');            // Enable to load jQuery from the Google CDN
