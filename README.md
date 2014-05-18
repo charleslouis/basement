@@ -1,9 +1,9 @@
 Basement
 ========
 
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-
 [![Based on Foundation](http://foundation.zurb.com/assets/img/support/goodies/why-the-yeti.svg)](http://foundation.zurb.com/)
+
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Basement is a starting Wordpress theme based on [Foundation 5](http://foundation.zurb.com/) whith a bit of [Bourbon](http://bourbon.io/) magic and [Html5 Boilerplate](http://html5boilerplate.com/).
 It derives from [Roots](http://roots.io/) and [Reverie](http://themefortress.com/reverie/).
@@ -73,7 +73,7 @@ Use **lib/custom.php** to store your own functions or, alternatively, use **func
 
 #### Menu
 * cleaner menu output using basement_walker (derives from root/reverie nav_walker)
-* adds not-click class for dropdown items that have '#' as a url
+* adds `.not-click` css class for dropdown items that have '#' or empty url
 
 ## Licence
 Basement is released under the MIT License (MIT), the same as Foundation, Roots and Reverie.
