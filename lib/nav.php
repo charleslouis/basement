@@ -69,32 +69,39 @@ class basement_walker extends Walker_Nav_Menu {
     $classes[] = 'menu-item menu-item-' . $menu_type . ' menu-item-' . $slug;
     
     $classes = array_unique($classes);
-
+	
 		// Check for flyout
 		$flyout_toggle = '';
-		if ( $args->has_children && $this->nav_bar['item_type'] == 'li' ) {
 
-			if ( $depth == 0 && $this->nav_bar['in_top_bar'] == false ) {
-
+		if ( $args->has_children && $this->nav_bar['item_type'] == 'li' ) :
+		
+			if ( $depth == 0 && $this->nav_bar['in_top_bar'] == false ) :
+			
 				$classes[] = 'has-flyout';
 				$flyout_toggle = '<a href="#" class="flyout-toggle"><span></span></a>';
 
-			} else if ( $this->nav_bar['in_top_bar'] == true ) {
-
+			elseif ( $this->nav_bar['in_top_bar'] == true ) :
+				
+				// we now $depth > 0 so menu item has dropdown items and must not be clickable
 				$classes[] = 'has-dropdown';
 				$flyout_toggle = '';
-			}
 
-		}
+				if (empty( $item->url ) || $item->url = '#' ) :
+					$classes[] = 'not-click';				
+				endif;
+
+			endif;		
+		endif;
 
 		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 
-		if ( $depth > 0 ) {
+		
+		if ( $depth > 0 ) :
 			$output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
-		} else {
+		else :
 			$output .= $indent . ( $this->nav_bar['in_top_bar'] == true ? '<li class="divider"></li>' : '' ) . '<' . $this->nav_bar['item_type'] . ' id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
-		}
+		endif;
 
 		$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
 		$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
