@@ -21,8 +21,10 @@ Then run :
 npm install
 bower install
 ````
-Note for cygwin user : as you might know, [you can't](https://www.npmjs.org/doc/README.html) run `npm install` in cygwin. Use another bash to run it.
-Once installed, you can, however, run `grunt dev` from cygwin.
+Notes: 
+- cygwin user : as you might know, [you can't](https://www.npmjs.org/doc/README.html) run `npm install` in cygwin. Use another bash to run it. Once installed, you can, however, run `grunt dev` from cygwin.
+- you need to run `grunt dist` once to generate style.css for the first time (excluded in .gitignore)
+- bower_components and node_modules are excluded in .gitignore
 
 All in the console you can go like 
 ````
