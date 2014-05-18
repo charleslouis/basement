@@ -1,8 +1,9 @@
 Basement
 ========
 
-[![Based on Foundation](http://foundation.zurb.com/assets/img/support/goodies/why-the-yeti.svg)](http://foundation.zurb.com/)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+[![Based on Foundation](http://foundation.zurb.com/assets/img/support/goodies/why-the-yeti.svg)](http://foundation.zurb.com/)
 
 Basement is a starting Wordpress theme based on [Foundation 5](http://foundation.zurb.com/) whith a bit of [Bourbon](http://bourbon.io/) magic and [Html5 Boilerplate](http://html5boilerplate.com/).
 It derives from [Roots](http://roots.io/) and [Reverie](http://themefortress.com/reverie/).
