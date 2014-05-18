@@ -6,7 +6,8 @@ It derives from [Roots](http://roots.io/) and [Reverie](http://themefortress.com
 It uses Foundation, Bower, Sass, Libsass and Grunt.
 
 ## Prerequisites and dependancies
-All the dependencies for Basement are contained contained in package.json `npm install` and bower.json `bower install``:
+All the dependencies for Basement are contained contained in package.json (npm) and bower.json (bower).
+Before installation, you need to have the following :
 - [nodejs](http://nodejs.org/)
 - [Grunt](http://gruntjs.com/)
 - [bower](http://bower.io/) 
