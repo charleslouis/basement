@@ -57,8 +57,8 @@ module.exports = function(grunt) {
       dev: {
         options: {
           beautify: true,
+          preserveComments: 'all',
         },   
-        preserveComments: 'all',
         files: {
           'assets/js/script.js' : [
           // 'bower_components/fastclick/lib/fastclick.js',
