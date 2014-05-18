@@ -85,3 +85,8 @@ require_once('meta.php');
     - return wrapper 
 */
 require_once('wrapper.php');
+/*
+12. custom.php
+    - store your custom functions here
+*/
+require_once('custom.php');

@@ -1,4 +1,5 @@
 <?php
+//This is where you can paste your own functions
 
 function shortlink_by_id( $post_id ) {
   return home_url().'/?p='.$post_id;
