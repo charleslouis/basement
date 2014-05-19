@@ -35,8 +35,8 @@ $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
 // We use these to control various global styles
-$body-bg: #fff;
-$body-font-color: #444;
+$body-bg: lighten(#015a92, 66%);
+$body-font-color: darken(#015a92, 10%);
 $body-font-family: 'Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -50,7 +50,7 @@ $body-font-family: 'Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial,
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #015a92;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -1012,8 +1012,8 @@ $panel-margin-bottom: rem-calc(20);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: #123456;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -1024,9 +1024,9 @@ $panel-margin-bottom: rem-calc(20);
 // $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
+$topbar-dropdown-bg: $topbar-bg-color;
 // $topbar-dropdown-link-color: #fff;
-// $topbar-dropdown-link-bg: #333;
+$topbar-dropdown-link-bg: $topbar-bg-color;
 // $topbar-dropdown-link-weight: normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
@@ -1086,7 +1086,7 @@ $panel-margin-bottom: rem-calc(20);
 // $header-font-family: join("Open Sans", $body-font-family);
 // $header-font-weight: 300;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: $primary-color;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;

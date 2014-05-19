@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Home
+Template Name: Home page
 */
 ?>
 <?php get_template_part('templates/header'); ?>
@@ -12,7 +12,6 @@ Template Name: Home
 		<hr>
 		<?php get_template_part('templates/loops', 'posts'); ?>
 		
-
 </div>
 <?php include basement_sidebar_path(); ?>	
 <?php get_template_part('templates/footer'); ?>
