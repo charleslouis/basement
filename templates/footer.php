@@ -15,7 +15,7 @@
 	</div>
 	<div class="row love-basement">
 		<div class="large-12 columns">
-			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('Made with Love in','basement'); ?> <a href="http://themefortress.com/basement/" rel="nofollow" title="Basement Framework">Basement</a>.</p>
+			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
 		</div>
 	</div>
 </footer>
