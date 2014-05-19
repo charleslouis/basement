@@ -44,7 +44,7 @@ This will watch your repo for updates to your SCSS, JS and PHP files and Grunt w
 - ~~uglify~~ beautify your JS in a single file with `console.log()` and comments preserved so that debug is easier
 - reload your web page using [livereload](http://livereload.com/) browser extension
 
-* Note :* Basement uses [grunt-sass](https://github.com/sindresorhus/grunt-sass) to compile SCSS to CSS using [Libass](http://libsass.org/). Some people say it is [faster](http://benfrain.com/lightning-fast-sass-compiling-with-libsass-node-sass-and-grunt-sass/) than the initial Sass compiler in Ruby.
+*Note :* Basement uses [grunt-sass](https://github.com/sindresorhus/grunt-sass) to compile SCSS to CSS using [Libass](http://libsass.org/). Some people say it is [faster](http://benfrain.com/lightning-fast-sass-compiling-with-libsass-node-sass-and-grunt-sass/) than the initial Sass compiler in Ruby.
 
 #### Optimize images
 You might also need to run `grunt img` when you add images (svg/png/jpg) in `assets/img/src` to optimize them. This will :
