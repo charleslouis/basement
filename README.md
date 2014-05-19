@@ -5,9 +5,8 @@ Basement
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-Basement is a starting Wordpress theme based on [Foundation 5](http://foundation.zurb.com/) whith a bit of [Bourbon](http://bourbon.io/) magic and [Html5 Boilerplate](http://html5boilerplate.com/).
-It derives from [Roots](http://roots.io/) and [Reverie](http://themefortress.com/reverie/).
-It uses Foundation, Bower, Sass, Libsass and Grunt.
+#####Basement is a starting Wordpress theme based on [Foundation 5](http://foundation.zurb.com/) whith a bit of [Bourbon](http://bourbon.io/) magic and [Html5 Boilerplate](http://html5boilerplate.com/) markup.
+It uses Foundation, Bower, Sass, Libsass and Grunt and blend forks form [Roots](http://roots.io/) and [Reverie](http://themefortress.com/reverie/).
 
 ## Prerequisites and dependancies
 All the dependencies for Basement are contained contained in package.json (npm) and bower.json (bower).
@@ -24,8 +23,8 @@ npm install
 bower install
 ````
 Notes: 
-- cygwin user : as you might know, [you can't](https://www.npmjs.org/doc/README.html) run `npm install` in cygwin. Use another bash to run it. Once installed, you can, however, run `grunt dev` from cygwin.
-- you need to run `grunt dist` once to generate style.css for the first time (excluded in .gitignore)
+- cygwin user : as you might know, [you can't](https://www.npmjs.org/doc/README.html) run `npm install` in cygwin. Use another bash to run it. Once installed, you can however, run `grunt` from cygwin
+- you need to run `grunt dist` once to generate style and scripts for the first time as they are excluded in .gitignore
 - bower_components and node_modules are excluded in .gitignore
 
 All in the console you can go like 
