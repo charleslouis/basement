@@ -47,14 +47,18 @@ This will watch your repo for updates to your SCSS, JS and PHP files and Grunt w
 - reload your web page using [livereload](http://livereload.com/) browser extension
 
 #### Optimize images
-You might also need to run `grunt img` when you add images (svg/png) to optimize them before storing them in the proper folder (see below).
+You might also need to run `grunt img` when you add images (svg/png/jpg) in `assets/img/src` to optimize them. This will :
+- optimize SVG using [svgmin](https://github.com/sindresorhus/grunt-svgmin) 
+- optimize PNGs and JPGs using [smushit](https://github.com/heldr/grunt-smushit)
+- store the optimized images in the proper built folder `assets/img`
 
-#### Get ready for production
-When you feel ready to go on production, run `grunt dist`. This will automatically :
+
+#### Get ready for distribution
+When you feel ready to go live, run `grunt dist`. This will automatically :
 - compile your SCSS to CSS in a single file in an **compressed style** with no **debugInfo**
 - check your JS using [jshint](http://www.jshint.com/). This can be configured in the .jshint file
 - uglify your JS in a single file **without** `console.log()` and only some comments preserved
-- optimize your images : SVG using [svgmin](https://github.com/sindresorhus/grunt-svgmin) and PNGs using [smushit](https://github.com/heldr/grunt-smushit)
+- run `grunt img` presented above as a sub-task
 
 ## Configuration
 Edit **lib/config.php** to enable or disable support for various theme functions and to define constants that are used throughout the theme such as :
