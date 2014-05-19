@@ -8,7 +8,8 @@
 		// http://www.lukew.com/
 	?>
 	<?php require_once locate_template('templates/nav/top-navbar.php'); ?>
-	<!-- <?php require_once locate_template('templates/nav/top-navbar-nojs.php'); ?> -->
+	<?php 
+	// require_once locate_template('templates/nav/top-navbar-nojs.php'); ?>
 </header>
 
 <!-- Start the main container -->
