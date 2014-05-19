@@ -1,4 +1,6 @@
 <?php get_template_part('templates/header'); ?>
-	<?php get_template_part('templates/content', 'search'); ?>
-	<?php include basement_sidebar_path(); ?>	
+<div class="small-12 large-8 columns" id="content" role="main">
+<?php get_template_part('templates/content', 'search'); ?>
+</div>
+<?php include basement_sidebar_path(); ?>	
 <?php get_template_part('templates/footer'); ?>
