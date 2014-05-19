@@ -5,7 +5,7 @@ Basement
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
-##### Basement is a starting Wordpress theme based on [Foundation 5](http://foundation.zurb.com/) whith a bit of [Bourbon](http://bourbon.io/) magic and [Html5 Boilerplate](http://html5boilerplate.com/) markup. It uses Foundation, Bower, Sass, Libsass and Grunt and blend forks form [Roots](http://roots.io/) and [Reverie](http://themefortress.com/reverie/).
+##### Basement is a starting Wordpress theme based on [Foundation 5](http://foundation.zurb.com/) whith a bit of [Bourbon](http://bourbon.io/) magic and [Html5 Boilerplate](http://html5boilerplate.com/) markup. It uses Foundation, Bower, GRunt and Libsass (node) and blends forks form [Roots](http://roots.io/) and [Reverie](http://themefortress.com/reverie/).
 
 ## Prerequisites and dependancies
 All the dependencies for Basement are contained contained in package.json (npm) and bower.json (bower).
@@ -36,13 +36,15 @@ bower install
 ````
 
 ## Theme development and usage
-#### Compile and reload
+#### Compile and livereload
 Once installed you can simply use : `grunt dev` during theme development.
 This will watch your repo for updates to your SCSS, JS and PHP files and Grunt will automatically :
 - compile your SCSS to CSS in a single file in an **expanded style** with **sourcemap** and **debugInfo**
 - check your JS using [jshint](http://www.jshint.com/). This can be configured in the .jshintrc file
 - ~~uglify~~ beautify your JS in a single file with `console.log()` and comments preserved so that debug is easier
 - reload your web page using [livereload](http://livereload.com/) browser extension
+
+**Note : ** Basement uses [grunt-sass](https://github.com/sindresorhus/grunt-sass) to compile SCSS to CSS using [Libass](http://libsass.org/). Some people say it is [faster](http://benfrain.com/lightning-fast-sass-compiling-with-libsass-node-sass-and-grunt-sass/) than the initial Sass compiler in Ruby.
 
 #### Optimize images
 You might also need to run `grunt img` when you add images (svg/png/jpg) in `assets/img/src` to optimize them. This will :
