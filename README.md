@@ -1,7 +1,7 @@
 Basement
 ========
 
-[![Based on Foundation](http://foundation.zurb.com/assets/img/support/goodies/why-the-yeti.svg)](http://foundation.zurb.com/)
+[![Based on Foundation](https://github.com/kartonnade/basement/blob/master/assets/img/built-with-foundation.jpg?raw=true)](http://foundation.zurb.com/)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
