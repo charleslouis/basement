@@ -1,5 +1,5 @@
 /*!==============================================================================
-Basement - v1.0.0 - 2014-05-18
+Basement - v1.0.0 - 2014-05-20
  https://github.com/kartonnade/basement/
   ====================BASEMENT ==================== Basement is a WordPress starting theme based on ZURB's [Foundation](http://foundation.zurb.com). Basement derives from [Reverie](https://github.com/milohuang/reverie) and [Roots](https://github.com/roots/roots)
 Copyright (c) 2014 undefined
