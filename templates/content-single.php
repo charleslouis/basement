@@ -1,5 +1,3 @@
-<!-- Row for main content area -->
-<div class="small-12 large-8 columns" id="content" role="main">
 <?php while (have_posts()) : the_post(); ?>
 	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 		<header>
@@ -17,4 +15,3 @@
 		<?php comments_template('/templates/comments.php'); ?>
 	</article>
 <?php endwhile; // End the loop ?>
-</div>
