@@ -3,12 +3,12 @@
 if ( function_exists( 'add_image_size' ) ) {
 
   // Made to work with interchange
-  add_image_size( 'small', 340, 224, true ); //(cropped)
-  add_image_size( 'small-retina', 680, 449, true ); //(cropped)
-  add_image_size( 'medium', 800, 528, true ); //(cropped)
-  add_image_size( 'medium-retina', 1600, 1056, true ); //(cropped)
-  add_image_size( 'large', 1600, 1056, true ); //(cropped)
-  add_image_size( 'large-retina', 2600, 1716, true ); //(cropped)
+  add_image_size( 'small', 340, 340, false ); //(cropped)
+  add_image_size( 'small-retina', 680, 680, false ); //(cropped)
+  add_image_size( 'medium', 800, 800, false ); //(cropped)
+  add_image_size( 'medium-retina', 1600, 1600, false ); //(cropped)
+  add_image_size( 'large', 1600, 1600, false ); //(cropped)
+  add_image_size( 'large-retina', 2600, 2600, false ); //(cropped)
 
 }
 

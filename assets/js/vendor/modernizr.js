@@ -1,6 +1,10 @@
-/*! Basement - v1.0.0 - 2014-05-18
-* [object Object]
-* Copyright (c) 2014 ; Licensed  */
+/*!==============================================================================
+Basement - v1.0.0 - 2014-05-27
+ https://github.com/kartonnade/basement/
+  ====================BASEMENT ==================== Basement is a WordPress starting theme based on ZURB's [Foundation](http://foundation.zurb.com). Basement derives from [Reverie](https://github.com/milohuang/reverie) and [Roots](https://github.com/roots/roots)
+Copyright (c) 2014 undefined
+Licenced: MIT Licence 
+============================================================================== */
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-inlinesvg-svg-svgclippaths-touch-shiv-mq-cssclasses-teststyles-prefixes-ie8compat-load
  */
