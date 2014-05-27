@@ -35,7 +35,8 @@ $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
 // We use these to control various global styles
-$body-bg: lighten(#015a92, 66%);
+// $body-bg: lighten(mix(#015a92, #eee), 25%);
+$body-bg: lighten(mix(#015a92, #fff), 60%);
 $body-font-color: darken(#015a92, 10%);
 $body-font-family: 'Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -51,9 +52,10 @@ $body-font-family: 'Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial,
 
 // We use these as default colors throughout
 $primary-color: #015a92;
-// $secondary-color: #e7e7e7;
+$secondary-color: #BF2E1B;
+// $secondary-color: #1401EC;
 // $alert-color: #f04124;
-// $success-color: #43AC6A;
+$success-color: #289728;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
@@ -1012,7 +1014,7 @@ $panel-margin-bottom: rem-calc(20);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: #123456;
+$topbar-bg-color: scale-color($primary-color, $lightness: -30%);
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1036,12 +1038,12 @@ $topbar-dropdown-link-bg: $topbar-bg-color;
 // $topbar-link-color: #fff;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
-// $topbar-link-weight: normal;
+$topbar-link-weight: bold;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg-hover: #272727  ;
+$topbar-link-bg-hover: scale-color($primary-color, $lightness: -15%);
 // $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -5%);
 // $topbar-link-font-family: $body-font-family;
 
 // $topbar-button-font-size: 0.75rem;
@@ -1129,8 +1131,8 @@ $header-font-color: $primary-color;
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-font-color: $secondary-color;
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -16%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;

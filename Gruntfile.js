@@ -82,7 +82,7 @@ module.exports = function(grunt) {
           // 'bower_components/foundation/js/foundation/foundation.slider.js',
           // 'bower_components/foundation/js/foundation/foundation.tab.js',
           // 'bower_components/foundation/js/foundation/foundation.tooltip.js',
-          // 'bower_components/foundation/js/foundation/foundation.topbar.js',
+          'bower_components/foundation/js/foundation/foundation.topbar.js',
           'assets/js/src/custom/*.js',
           ],
           'assets/js/vendor/modernizr.js' : 'assets/js/src/vendor/modernizr.js',
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
           // 'bower_components/foundation/js/foundation/foundation.slider.js',
           // 'bower_components/foundation/js/foundation/foundation.tab.js',
           // 'bower_components/foundation/js/foundation/foundation.tooltip.js',
-          // 'bower_components/foundation/js/foundation/foundation.topbar.js',
+          'bower_components/foundation/js/foundation/foundation.topbar.js',
           'assets/js/src/custom/*.js',
           ],
           'assets/js/modernizr.js' : 'bower_components/modernizr/modernizr.js'

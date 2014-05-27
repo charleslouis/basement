@@ -1,7 +1,7 @@
 	</div><!-- Row End -->
 </div><!-- Container End -->
 
-<div class="full-width footer-widget">
+<div class="full-width footer-widget footer-widget-1">
 	
 	<div class="row">
 		<?php dynamic_sidebar("Actualites Footer"); ?>
@@ -9,20 +9,22 @@
 		<?php dynamic_sidebar("Adhesion"); ?>
 	</div>
 	<hr>
-	
+</div>
+
+<div class="full-width footer-widget footer-widget-2">	
 	<div class="row">
 		<h3  class="large-12 columns">Découvrez les projets web de l'Institut Renaudot</h3>
 		<hr>
 		<section class="large-6 columns">
 			<h4>Santé Ensemblee</h4>
 			<p>Rechercher des projets et expériences menés dans une démarche communautaire en santé. Echanger sur les expériences, donner son avis, poser des questions et rentrer en contact. Contribuer à enrichir le site en présentant une action/un projet/un programme.</p>
-			<a class="button expand" href="http://sante-ensemble.org/">sante-ensemble.org</a>
+			<a class="button secondary expand" href="http://sante-ensemble.org/">sante-ensemble.org</a>
 		</section>
 		<section class="large-6 columns">
 			<h4>Centre documentaire</h4>
 			<p>En tant que centre de ressources en santé communautaire, l'Institut Renaudot met à votre disposition des documents à consulter sur place ou en ligne.</p>
 			<br>
-			<a class="button expand" href="http://www.santecommunautaire.com/opac_css/">Centre Documentaire</a>
+			<a class="button secondary expand" href="http://www.santecommunautaire.com/opac_css/">Centre Documentaire</a>
 		</section>
 	</div>
 </div>
