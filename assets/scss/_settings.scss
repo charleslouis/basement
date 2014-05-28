@@ -375,7 +375,7 @@ $success-color: #289728;
 // $form-label-font-weight: normal;
 // $form-label-font-color: scale-color(#000, $lightness: 30%);
 // $form-label-bottom-margin: rem-calc(8);
-// $input-font-family: inherit;
+$input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
 // $input-bg-color: #fff;
@@ -1085,8 +1085,8 @@ $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -5%);
 // $include-open-sans: true;
 
 // We use these to control header font styles
-// $header-font-family: join("Open Sans", $body-font-family);
-// $header-font-weight: 300;
+$header-font-family: join("Open Sans Condensed", $body-font-family);
+$header-font-weight: 700;
 // $header-font-style: normal;
 $header-font-color: $primary-color;
 // $header-line-height: 1.4;
@@ -1105,7 +1105,7 @@ $header-font-color: $primary-color;
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
 // $subheader-font-color: scale-color($header-font-color, $lightness: 35%);
-// $subheader-font-weight: 300;
+$subheader-font-weight: 300;
 // $subheader-top-margin: .2rem;
 // $subheader-bottom-margin: .5rem;
 
